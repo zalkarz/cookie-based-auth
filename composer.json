@@ -1,0 +1,39 @@
+{
+    "name": "zalkarz/cookie-based-auth",
+    "description": "Cookie-based authentication middleware for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "security",
+        "basic auth",
+        "cookie-based auth"
+    ],
+    "authors": [
+        {
+            "name": "ZZ",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Zalkarz\\CookieBasedAuth\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "illuminate/support": "^8 || ^9 || ^10"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zalkarz\\CookieBasedAuth\\CookieBasedAuthServiceProvider"
+            ]
+        }
+    }
+}
